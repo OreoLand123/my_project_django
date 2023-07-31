@@ -18,6 +18,7 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
 from django.contrib.sitemaps.views import sitemap
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 from .sitemaps import sitemaps
 
@@ -34,6 +35,8 @@ urlpatterns = [
         name="django.contrib.sitemaps.views.sitemap",
     )
 ]
+
+urlpatterns += staticfiles_urlpatterns()
 
 if settings.DEBUG:
     urlpatterns.extend(

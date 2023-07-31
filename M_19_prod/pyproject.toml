@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "m-19-prod"
+version = "0.1.0"
+description = ""
+authors = ["Данил Котов <kotikov.lil@bk.ru>"]
+
+
+[tool.poetry.dependencies]
+python = "^3.11"
+asgiref = "^3.7.2"
+django = "4.2.0"
+django-debug-toolbar = "^4.1.0"
+django-filter = "^23.2"
+djangorestframework = "^3.14.0"
+gunicorn = "^21.2.0"
+packaging = "^23.1"
+pillow = "^10.0.0"
+pytz = "^2023.3"
+sqlparse = "^0.4.4"
+tzdata = "^2023.3"
+
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
